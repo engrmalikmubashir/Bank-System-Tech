@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Tech.Models.TransactionModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="alert alert-light text-center"><i class="fas fa-comment-dollar text-success"></i> Transactions History</h1>
+
+<div id="view-all">
+    @await Html.PartialAsync("_ViewAll", Model)
+</div>
